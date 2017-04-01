@@ -1,0 +1,8 @@
+{
+  "status": 1,
+  "file": "c:/this/projects/adpresso-css/scss/_normalize.scss",
+  "line": 190,
+  "column": 12,
+  "message": "no mixin named hover\n\nBacktrace:\n\tscss/_normalize.scss:190",
+  "formatted": "Error: no mixin named hover\n\n       Backtrace:\n       \tscss/_normalize.scss:190\n        on line 190 of scss/_normalize.scss\n>>   @include hover {\n   -----------^\n"
+}

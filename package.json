@@ -1,0 +1,27 @@
+{
+  "name": "adpresson-css",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "bower": "^1.3.7",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.4.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-selectors": "^1.1.0",
+    "grunt-exec": "^2.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-pure-grids": "^1.0.0",
+    "grunt-stripmq": "0.0.6",
+    "node-sass": "^4.5.1",
+    "tap": "^10.0.0"
+  },
+  "scripts": {
+    "sass": "node-sass --output-style expanded scss/adpresso.scss build/css/adpresso.css"
+  }
+}
