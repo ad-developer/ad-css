@@ -20,17 +20,24 @@ module.exports = function(grunt) {
 
     // -- Clean Config ---------------------------------------------------------
     clean: {
-        build: ['build/css/*.css'],
-        sass: ['sass/*.css']
+        build: ['dist/css/*.css'],
+        sass: ['sass/*.css'],
+        site: ['site/css/adpresso.css']
     },
 
     // -- Copy Config ----------------------------------------------------------
     copy:{
       build: {
           src    : 'scss/*.css',
-          dest   : 'build/css',
+          dest   : 'dist/css',
           expand : true,
           flatten: true
+      },
+      site: {
+        src    : 'dist/css/adpresso.css',
+        dest   : 'site/css',
+        expand : true,
+        flatten: true
       }
     },
 
@@ -45,7 +52,7 @@ module.exports = function(grunt) {
       },
       copy:{
         files:['scss/**/*.scss'],
-        tasks:['copy', 'clean:sass', 'postcss'],
+        tasks:['copy:build', 'clean:sass', 'postcss'],
         options: {
             spawn: false
         }
@@ -60,7 +67,7 @@ module.exports = function(grunt) {
             ]
         },
         dist: {
-            src: 'build/css/*.css'
+            src: 'dist/css/*.css'
         }
     },
 
@@ -70,7 +77,7 @@ module.exports = function(grunt) {
         options: {
             csslintrc: '.csslintrc'
         },
-        build   : ['build/css/*.css']
+        build   : ['dist/css/*.css']
     }
   });
 
@@ -87,10 +94,12 @@ module.exports = function(grunt) {
       'clean:build',
       'clean:sass',
       'exec:sass',
-      'copy',
+      'copy:build',
       'postcss',
       'clean:sass',
-      'test'
+      'test',
+      'clean:site',
+      'copy:site'
   ]);
 
   grunt.registerTask('test', ['csslint']);
