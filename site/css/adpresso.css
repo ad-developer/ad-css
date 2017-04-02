@@ -2020,3 +2020,55 @@ input[type="button"].btn-block {
 .navbar-inverse .navbar-text {
   color: rgba(255, 255, 255, 0.5);
 }
+
+.bg-faded {
+  background-color: #f7f7f7;
+}
+
+.bg-primary {
+  background-color: #0275d8 !important;
+}
+
+a.bg-primary:focus, a.bg-primary:hover {
+  background-color: #025aa5 !important;
+}
+
+.bg-success {
+  background-color: #5cb85c !important;
+}
+
+a.bg-success:focus, a.bg-success:hover {
+  background-color: #449d44 !important;
+}
+
+.bg-info {
+  background-color: #5bc0de !important;
+}
+
+a.bg-info:focus, a.bg-info:hover {
+  background-color: #31b0d5 !important;
+}
+
+.bg-warning {
+  background-color: #f0ad4e !important;
+}
+
+a.bg-warning:focus, a.bg-warning:hover {
+  background-color: #ec971f !important;
+}
+
+.bg-danger {
+  background-color: #d9534f !important;
+}
+
+a.bg-danger:focus, a.bg-danger:hover {
+  background-color: #c9302c !important;
+}
+
+.bg-inverse {
+  background-color: #292b2c !important;
+}
+
+a.bg-inverse:focus, a.bg-inverse:hover {
+  background-color: #101112 !important;
+}
