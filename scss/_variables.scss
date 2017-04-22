@@ -44,6 +44,7 @@ $blue:   #0275d8 !default;
 $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
+$orange-google: rgb(255, 187, 0) !default;
 
 // Create grayscale
 $gray-dark:                 #292b2c !default;
@@ -53,13 +54,13 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             #0097a7 !default; //$blue !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
 $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
-$brand-google-keep:         rgb(255, 187, 0);
+$brand-google-keep:         $orange-google !default;
 
 
 // Options
@@ -219,8 +220,8 @@ $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $gray-dark !default;
-$btn-secondary-bg:               $white !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-bg:               #ffa000; //$white !default;
+$btn-secondary-border:           #c67100; //#ccc !default;
 
 $btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
