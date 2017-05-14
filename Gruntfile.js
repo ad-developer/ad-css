@@ -1,5 +1,5 @@
 /**
- * AdPresson Gruntfile
+ * ad-css Gruntfile
  * Copyright 2017 A.D.
  */
 module.exports = function(grunt) {
