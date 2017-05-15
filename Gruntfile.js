@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     clean: {
         build: ['dist/css/*.css'],
         sass: ['sass/*.css'],
-        site: ['site/css/adpresso.css']
+        site: ['site/css/ad.css']
     },
 
     // -- Copy Config ----------------------------------------------------------
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           flatten: true
       },
       site: {
-        src    : 'dist/css/adpresso.css',
+        src    : 'dist/css/ad.css',
         dest   : 'site/css',
         expand : true,
         flatten: true

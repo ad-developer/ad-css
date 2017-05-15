@@ -22,6 +22,6 @@
     "tap": "^10.0.0"
   },
   "scripts": {
-    "sass": "node-sass --output-style expanded scss/adpresso.scss dist/css/adpresso.css && node-sass --output-style expanded scss/adpresso-normalize.scss dist/css/adpresso-normalize.css"
+    "sass": "node-sass --output-style expanded scss/ad.scss dist/css/ad.css && node-sass --output-style expanded scss/ad-normalize.scss dist/css/ad-normalize.css"
   }
 }
