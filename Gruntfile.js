@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
     // -- Clean Config ---------------------------------------------------------
     clean: {
-        build: ['dist/css/*.css'],
+        build: ['dist/*.css'],
         sass: ['sass/*.css'],
         site: ['site/css/ad.css']
     },
@@ -29,12 +29,12 @@ module.exports = function(grunt) {
     copy:{
       build: {
           src    : 'scss/*.css',
-          dest   : 'dist/css',
+          dest   : 'dist',
           expand : true,
           flatten: true
       },
       site: {
-        src    : 'dist/css/ad.css',
+        src    : 'dist/ad.css',
         dest   : 'site/css',
         expand : true,
         flatten: true
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
             ]
         },
         dist: {
-            src: 'dist/css/*.css'
+            src: 'dist/*.css'
         }
     },
 
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         options: {
             csslintrc: '.csslintrc'
         },
-        build   : ['dist/css/*.css']
+        build   : ['dist/*.css']
     }
   });
 
